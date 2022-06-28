@@ -1,0 +1,212 @@
+@keyframes textoIntro {
+  0% {
+    color: rgb(204, 255, 204);
+  }
+  20% {
+    color: rgb(131, 255, 131);
+  }
+  50% {
+    color: rgb(82, 255, 82);
+  }
+  70% {
+    color: rgb(131, 255, 131);
+  }
+  100% {
+    color: rgb(204, 255, 204);
+  }
+}
+
+@keyframes textoTitulo {
+  0% {
+    color: rgb(0, 50, 158);
+  }
+  20% {
+    color: rgb(45, 104, 231);
+  }
+  50% {
+    color: rgb(153, 185, 255);
+  }
+  70% {
+    color: rgb(45, 104, 231);
+  }
+  100% {
+    color: rgb(0, 50, 158);
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(to bottom right, #6bf7e6, #00c9bf, #1a8391);
+  background-attachment: fixed;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  font-family: Oswald;
+  font-size: 25pt;
+  color: rgb(0, 50, 158);
+  letter-spacing: 4px;
+  position: relative;
+  left: 10px;
+  animation-name: textoTitulo;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+
+.IconsHeader {
+  display: flex;
+  position: relative;
+  top: 1vh;
+  right: 2vh;
+}
+
+.InstaIcon {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.LinkIcon {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  left: 1vh;
+  cursor: pointer;
+}
+
+.intro {
+  display: flex;
+  justify-content: center;
+}
+
+.fraseIntro {
+  font-family: Oswald;
+  font-size: 25pt;
+  color: rgb(204, 255, 204);
+  animation-name: textoIntro;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 60px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.jogosButton,
+.sitesButton,
+.servicosButton {
+  position: relative;
+  width: 200px;
+  height: 30px;
+  font-family: Oswald;
+  font-size: 13pt;
+  color: rgb(255, 255, 255);
+  background-color: rgb(107, 255, 107);
+  border: none;
+  box-shadow: 3px 3px rgb(0, 129, 0);
+  cursor: pointer;
+}
+
+.sitesButton {
+  top: 8px;
+}
+
+.servicosButton {
+  top: 16px;
+}
+
+.jogosButton:hover {
+  background-color: rgb(0, 129, 0);
+  box-shadow: 3px 3px rgb(0, 66, 0);
+}
+
+.sitesButton:hover {
+  background-color: rgb(0, 129, 0);
+  box-shadow: 3px 3px rgb(0, 66, 0);
+}
+
+.servicosButton:hover {
+  background-color: rgb(0, 129, 0);
+  box-shadow: 3px 3px rgb(0, 66, 0);
+}
+
+.jogosButton:active {
+  background-color: rgb(0, 66, 0);
+  box-shadow: none;
+  top: 3px;
+  left: 3px;
+}
+
+.sitesButton:active {
+  background-color: rgb(0, 66, 0);
+  box-shadow: none;
+  top: 11px;
+  left: 3px;
+}
+
+.servicosButton:active {
+  background-color: rgb(0, 66, 0);
+  box-shadow: none;
+  top: 19px;
+  left: 3px;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.containerFooter {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info {
+  font-family: Oswald;
+  font-size: 13pt;
+  color: rgb(255, 255, 255);
+}
+
+.infosButton {
+  position: relative;
+  bottom: 4px;
+  right: 4px;
+  font-family: Oswald;
+  font-size: 12pt;
+  color: rgb(255, 255, 255);
+  background-color: rgb(107, 255, 107);
+  border: none;
+  box-shadow: 3px 3px rgb(0, 129, 0);
+  cursor: pointer;
+}
+
+.infosButton:hover {
+  background-color: rgb(0, 129, 0);
+  box-shadow: 3px 3px rgb(0, 66, 0);
+}
+
+.infosButton:active {
+  background-color: rgb(0, 66, 0);
+  box-shadow: none;
+  top: 2px;
+  left: 2px;
+}
